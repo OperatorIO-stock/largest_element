@@ -8,22 +8,25 @@ class Program
     {
         int rows = 10;
         int cols = 10;
+        int replaceLargerNumberInArray = 0;
+        int minNumberArray = 1;
+        int maxNumberArray = 10;
 
-        int[,] array = new int[rows, cols];
+        int[,] arrayNumbers = new int[rows, cols];
 
         Random random = new Random();
 
         for (int i = 0; i < rows; i++)
             for (int j = 0; j < cols; j++)
-                array[i, j] = random.Next(1, 10);
+                arrayNumbers[i, j] = random.Next(minNumberArray, maxNumberArray);
 
-        int maxElement = array[0, 0];
+        int maxElement = arrayNumbers[0, 0];
 
         for (int i = 0; i < rows; i++)
         {
             for (int j = 0; j < cols; j++)
-                if (array[i, j] > maxElement)
-                    maxElement = array[i, j];
+                if (arrayNumbers[i, j] > maxElement)
+                    maxElement = arrayNumbers[i, j];
         }
 
         Console.WriteLine($"Max number of the matrix: {maxElement}\n");
@@ -32,7 +35,7 @@ class Program
         for (int i = 0; i < rows; i++)
         {
             for (int j = 0; j < cols; j++)
-                Console.Write($"{array[i, j]} ");
+                Console.Write($"{arrayNumbers[i, j]} ");
             
             Console.WriteLine();
         }
@@ -43,10 +46,10 @@ class Program
         {
             for (int j = 0; j < cols; j++)
             {
-                if (array[i, j] == maxElement)
-                    array [i, j] = 0;
+                if (arrayNumbers[i, j] == maxElement)
+                    arrayNumbers[i, j] = replaceLargerNumberInArray;
                 
-                Console.Write($"{array[i, j]} ");
+                Console.Write($"{arrayNumbers[i, j]} ");
             }
 
             Console.WriteLine();

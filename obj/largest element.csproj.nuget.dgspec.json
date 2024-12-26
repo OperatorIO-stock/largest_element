@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/operatorio/Документы/meCodes/largest element/largest element.csproj": {}
+    "/home/operatorio/Документы/meCodes/largest element/largest_element/largest element.csproj": {}
   },
   "projects": {
-    "/home/operatorio/Документы/meCodes/largest element/largest element.csproj": {
+    "/home/operatorio/Документы/meCodes/largest element/largest_element/largest element.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/operatorio/Документы/meCodes/largest element/largest element.csproj",
+        "projectUniqueName": "/home/operatorio/Документы/meCodes/largest element/largest_element/largest element.csproj",
         "projectName": "largest element",
-        "projectPath": "/home/operatorio/Документы/meCodes/largest element/largest element.csproj",
+        "projectPath": "/home/operatorio/Документы/meCodes/largest element/largest_element/largest element.csproj",
         "packagesPath": "/home/operatorio/.nuget/packages/",
-        "outputPath": "/home/operatorio/Документы/meCodes/largest element/obj/",
+        "outputPath": "/home/operatorio/Документы/meCodes/largest element/largest_element/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/operatorio/.nuget/NuGet/NuGet.Config"
